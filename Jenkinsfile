@@ -30,7 +30,7 @@ pipeline {
                 sh 'mvn pacege -DskipTests'
             }
         }
-           stege('stege-6 : install') {
+           stage('stage-6 : install') {
              stepes {
                   sh 'mvn install -DskipTests'
         }
