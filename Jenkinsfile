@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Stage-5 : package') { 
             steps {
-                sh 'mvn pacege -DskipTests'
+                sh 'mvn package -DskipTests'
             }
         }
         stage('stage-6 : install') {
