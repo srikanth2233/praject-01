@@ -10,32 +10,32 @@ pipeline {
                 sh 'mvn clean'
             }
         }
-         stage('Stage-2 : Validate') { 
+        stage('Stage-2 : Validate') { 
             steps {
                 sh 'mvn validate'
             }
         }
-         stage('Stage-3 : Compile') { 
+        stage('Stage-3 : Compile') { 
             steps {
                 sh 'mvn compile'
             }
         }
-         stage('Stage-4 : Test') { 
+        stage('Stage-4 : Test') { 
             steps {
                 sh 'mvn test -DskipTests'
             }
         }
-          stage('Stage-5 : pacege') { 
+        stage('Stage-5 : package') { 
             steps {
                 sh 'mvn pacege -DskipTests'
             }
         }
-           stage('stage-6 : install') {
-             stepes {
+        stage('stage-6 : install') {
+            steps {
                   sh 'mvn install -DskipTests'
+            }
         }
-     }
-         stage('Stage-7 : Verify') { 
+        stage('Stage-7 : Verify') { 
             steps {
                 sh 'mvn verify -DskipTests'
             }
