@@ -11,29 +11,7 @@
 	<description>Cloud Binary Java WebApplication Project</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.6.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
- 		<maven.compiler.target>1.8</maven.compiler.target>
-		<java.version>11</java.version>
-		<surefire.version>3.0.0-M7</surefire.version>
-		<jacoco.version>0.7.9</jacoco.version>
 		
-		<!-- SonarQube Integration -->
-<!--		<sonar.organization>kummari</sonar.organization>
-		<sonar.projectKey>staropscenter</sonar.projectKey>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.login></sonar.login> -->
-	</properties> 
-	
-	<!-- Jfrog Integration with POM.xml file -->
 <distributionManagement>
 <!--    <snapshotRepository>
         <id>snapshots</id>
@@ -47,7 +25,6 @@
     </repository> -->
 
 </distributionManagement>
-
 	
 	<scm>
 		<connection>scm:git:git@github.com:kesavkummari/javacodescan.git</connection>
@@ -122,7 +99,7 @@
 			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.6.3</version> <!-- Use the latest version -->
+                <version></version> <!-- Use the latest version -->
             </plugin>
 			<plugin>
 			    <groupId>org.jacoco</groupId>
